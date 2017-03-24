@@ -136,6 +136,23 @@
 				</section>
 
 				<section>
+					<pre><code data-trim data-noescape>
+var track_style = {
+	color: 'rgb(100%, 100%, 0%)',
+	opacity: 0.9,
+	linewidth: 1.0
+};
+
+app.data_objs = {
+	'Tracks_V2': {
+		type: app.POLYLINE,
+		on: true,
+		group: 'Tracking', name: 'Tracks',
+		fn: hepvis.makeTracks,
+		style: track_style
+	}
+};
+					</code></pre>
 				</section>
 
 				<section>
