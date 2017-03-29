@@ -125,14 +125,77 @@
 						</p>
           	<p>University of Notre Dame, USA</p>
 						<p>
-							CWP Visualization Workshop
+							HSF Visualization Workshop
 						</p>
 						<p>
 							28-30 Mar 2017, CERN
 						</p>
-						<p>
-
         	</div>
+				</section>
+
+				<section>
+					<h3>2014</h3>
+					<ul>
+						<li>
+							Two applications: 1) a desktop application using Coin3D and Qt for making public event display images
+							 2) a browser-based event display rendering in canvas for use by public in <em>e.g.</em> masterclasses (running client-server)
+						</li>
+						<li>
+							Both used same JSON input format
+						</li>
+							WebGL (via three.js) + HTML, CSS, <em>etc.</em>:
+							lightweight application that fulfills both use cases and allows for even more future functionality
+						</li>
+						<li>
+							Right place and right time to develop iSpy WebGL
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>
+						The advantages of a web-based application are well-known and well-covered in this and past workshops. So what could have been done better?
+					</h4>
+					<ul>
+						<li>
+							If I had to do it over (and actually I have at least once for a non-CMS use-case):
+							I would have separated better the data model from the views and controls.
+						</li>
+						<li>
+							After all, there are things like MVC (model-view-control) frameworks for a reason
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h4>
+							If I had started now (or in the future) and want to visualize my experiment’s data with WebGL what would I want?
+						 	Another way to put it: what would make my job easier and increase productivity?
+						</h4>
+						<ul>
+							<li>
+								Common input format? For the physics use-case many things are generic
+							</li>
+							<li>
+								Don’t want to re-invent the wheel (although sometimes writing a new thing from scratch is fun and more importantly educational)
+							</li>
+							<li>
+								Have a framework that supports common views: table, tree, 3D, R$\Phi$, RZ, lego, ...
+							</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								Package for converting my data to THREE.Object3D (I am probably making the not-bad
+								assumption that three.js is the WebGL library used; at least 3 LHC experiments use it now)
+							</li>
+							<li>
+								Common way to handle geometry (SketchUp geometry came later and helped)
+							</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -156,9 +219,61 @@ app.data_objs = {
 				</section>
 
 				<section>
+					<section>
+						<h4>
+							Will commons tools exist in the future?
+						</h4>
+						<ul>
+							<li>
+								“Not invented here”
+							</li>
+							<li>
+								Crazy for each experiment now to write their own simulation package like Geant4;
+								event display isn’t as large a task as simulation (but it isn’t necessarily a small one either)
+								so perhaps experiments can and will write their own displays without common tools
+							</li>
+							<li>
+								Convergence on what common tools might be?
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>
+							Will commons tools exist in the future?
+						</h4>
+						<ul>
+							<li>
+								Is the time spent learning such tools < the time one could spend just writing from scratch?
+							</li>
+							<li>
+								Need a critical mass of community size using and developing
+							</li>
+							<li>
+								Need a good API, documentation (obviously)
+							</li>
+							<li>
+								Open-source
+							</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
+					<h4>In the future (not necessarily just with WebGL) </h4>
+					<ul>
+						<li>
+							Touch devices: tablets, phones, touch screens
+						</li>
+						<li>
+							What are the possibilities of AR?
+						</li>
+						<li>
+							What are the possibilities of VR? (CMS is developing ideas using Unity)
+						</li>
+						<li>
+							How and if to support? Game engine ("One Ring" to rule them all: desktop, VR, Web)?
+						</li>
+					</ul>
 				</section>
 
 			</div>
